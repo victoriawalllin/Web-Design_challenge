@@ -7,7 +7,7 @@
     , initial-scale=1.0">
     <title>Weather Data</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
           <a class="nav-link" href="comparisons.html">Comparisons</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
+          <a class="nav-link" href="Data.html">Data</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,17 +41,50 @@
       </ul>
     </div>
   </nav>
-    <section>
-      <h1>Weather Data</h1>
-      <h3><em>Latitude vs Temperature</em></h3>
-      <article>
-      <a target="_blank" href="Resources/assets/images/Fig1.png">
-        <img src="Resources/assets/images/Fig1.png" alt="Latitude vs Temperature">
-      </a>
-      
-      <p>This graph shows the relationship between temperature and latitude.  Temperature tends to be higher closer to where 
-          latitude is zero (Equator).  When you get farther away from the equator, the max temp tends to decrease.</p>
-      </article>
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="box">
+          <h3 class="title">Comparison: Latitude vs X</h3>
+          <hr>
+          <p>Click any plot to get an in-depth analysis.</p>
+          <div class="container" style="padding-bottom: 20px;">
+            <div class="row">
+              <div class="col-lg-6" style="padding: 20px;">
+                <!-- <div class= >vs. Max Temperature</div> -->
+                <center>vs. Max Temperature</center>
+                <a href="temperature.html">
+                  <img class="panel" src="Resources/assets/images/Fig1.png" alt="Latitude vs Temperature">
+                </a>
+              </div>
+              <div class="col-lg-6" style="padding: 20px;">
+                <center>vs. Humidity</center>
+                <a href="humidity.html">
+                  <img class="panel" src="Resources/assets/images/Fig2.png" alt="Latitude vs Humidity">
+                </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6" style="padding: 20px;">
+                <center>vs. Cloudiness</center>
+                <a href="cloudiness.html">
+                  <img class="panel" src="Resources/assets/images/Fig3.png" alt="Latitude vs Cloudiness">
+                </a>
+
+              </div>
+              <div class="col-lg-6" style="padding: 20px;">
+                <center>vs. Wind Speed</center>
+                <a href="wind.html">
+                  <img class="panel" src="Resources/assets/images/Fig4.png" alt="Latitude vs Wind Speed">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
